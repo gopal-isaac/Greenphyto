@@ -28,7 +28,7 @@ To restore the PostgreSQL database from the provided dump file:
 2. Use the following command to restore the dump:
    ```sh
    .\createdb -U postgres GreenphytoDB
-   .\pg_restore -U postgres -d GreenphytoDB ...\isaac.tar
+   .\pg_restore -U postgres -d GreenphytoDBTest ...\isaac.tar
    ```
    Replace `path/to/...\isaac.tar` with the actual path to your dump file.
    File is at ...\Greenphyto\isaac.tar
