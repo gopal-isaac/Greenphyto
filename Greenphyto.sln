@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "Greenphyto\WebApi.csproj", "{783FBA4D-92B2-4F29-9CCB-5C4B82006B97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "GreenServices\Services.csproj", "{1CD598B2-5F58-49F4-B455-F8D7984ACA2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{58742DE9-ABBE-456C-B724-7C6AC1466CEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{783FBA4D-92B2-4F29-9CCB-5C4B82006B97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{783FBA4D-92B2-4F29-9CCB-5C4B82006B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{783FBA4D-92B2-4F29-9CCB-5C4B82006B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{783FBA4D-92B2-4F29-9CCB-5C4B82006B97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CD598B2-5F58-49F4-B455-F8D7984ACA2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD598B2-5F58-49F4-B455-F8D7984ACA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD598B2-5F58-49F4-B455-F8D7984ACA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD598B2-5F58-49F4-B455-F8D7984ACA2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58742DE9-ABBE-456C-B724-7C6AC1466CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58742DE9-ABBE-456C-B724-7C6AC1466CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58742DE9-ABBE-456C-B724-7C6AC1466CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58742DE9-ABBE-456C-B724-7C6AC1466CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
