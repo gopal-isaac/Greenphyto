@@ -1,0 +1,6 @@
+@Greenphyto_HostAddress = http://localhost:5107
+
+GET {{Greenphyto_HostAddress}}/plant-sensor-data/
+Accept: application/json
+
+###
