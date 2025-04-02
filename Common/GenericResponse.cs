@@ -2,7 +2,6 @@
 {
     /// <summary>
     /// A generic reponse to reduce decoupling with the help of Type
-    /// My previous architect designed this and it has worked beautifully with mediatR  
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class GenericResponse<T>
