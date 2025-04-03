@@ -3,7 +3,7 @@
 ## Overview
 GreenPhyto API provides endpoints for managing plant sensor data, retrieving configurations, and integrating with third-party services.
 
-Design with clean architecture, espcially Vertical Slice Architecture in mind.
+Design with clean architecture, Vertical Slice Architecture in mind.
 It's achived by grouping all the classes that are related to a feature in a single folder. 
 This way, all the classes that are related to a feature are in one place, and you can easily find them.
 With the help of mediatR and GenericResponse of T.
