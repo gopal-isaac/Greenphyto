@@ -26,6 +26,7 @@ builder.Services.AddApplicationServices()
 // Have an api for the flags so that it can interface with a frontend so that non technical people can enable/disable it.
 // Questions: will this work at runtime?
 // TODO: build a webapi project for featureflag 
+// TODO: explore Feature filter
 builder.Services.AddFeatureManagement(
     builder.Configuration.GetSection("FeatureFlags")
     );
