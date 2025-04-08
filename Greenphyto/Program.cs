@@ -21,7 +21,11 @@ builder.Services.AddApplicationServices()
                 .AddDatabase(builder.Configuration)
                 .AddHttpClients();
 
-//Feature Flag
+// Feature Flag
+// Ideally, the configs can sit in the database.
+// Have an api for the flags so that it can interface with a frontend so that non technical people can enable/disable it.
+// Questions: will this work at runtime?
+// TODO: build a webapi project for featureflag 
 builder.Services.AddFeatureManagement(
     builder.Configuration.GetSection("FeatureFlags")
     );
