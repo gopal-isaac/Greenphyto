@@ -1,4 +1,5 @@
 using GreenServices;
+using Microsoft.FeatureManagement;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,6 +20,11 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Green
 builder.Services.AddApplicationServices()
                 .AddDatabase(builder.Configuration)
                 .AddHttpClients();
+
+//Feature Flag
+builder.Services.AddFeatureManagement(
+    builder.Configuration.GetSection("FeatureFlags")
+    );
 
 // Add Serilog
 Log.Logger = new LoggerConfiguration()

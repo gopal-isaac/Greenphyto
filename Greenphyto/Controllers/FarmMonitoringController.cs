@@ -1,6 +1,8 @@
 using Greenphyto.Features.Plants.GetPlantsSensor;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.FeatureManagement;
+using WebApi.FeatureFlags;
 
 namespace Greenphyto.Controllers
 {
@@ -10,11 +12,13 @@ namespace Greenphyto.Controllers
     {
         private readonly IMediator _mediator;
         private readonly ILogger<FarmMonitoringController> _logger;
+        private readonly IFeatureManager _featureManager;
 
-        public FarmMonitoringController(IMediator mediator, ILogger<FarmMonitoringController> logger)
+        public FarmMonitoringController(IMediator mediator, ILogger<FarmMonitoringController> logger, IFeatureManager featureManager)
         {
             _mediator = mediator;
             _logger = logger;
+            _featureManager = featureManager;
         }
 
         /// <summary>
@@ -28,6 +32,11 @@ namespace Greenphyto.Controllers
 
             try
             {
+                if (await _featureManager.IsEnabledAsync(FeatureFlag.AdditionalApi))
+                {
+                    return Ok("Featureflag is active, congrats");
+                }
+
                 var response = await _mediator.Send(new GetPlantSensorDataQuery());
 
                 if (response.Success)
